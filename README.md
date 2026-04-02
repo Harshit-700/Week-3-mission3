@@ -2,7 +2,7 @@
 
 A clean, responsive GitHub profile search app that lets you look up any developer in the world, fetch their profile data, and explore their top repositories — in real time. Built with vanilla HTML, CSS, and JavaScript using the GitHub REST API.
 
-🔗 **Live Demo:** [https://your-live-demo-link.vercel.app/](https://your-live-demo-link.vercel.app/)
+🔗 **Live Demo:** [https://week-3-mission3.vercel.app/](https://week-3-mission3.vercel.app/)
 
 ---
 
