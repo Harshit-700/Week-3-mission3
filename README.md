@@ -8,7 +8,7 @@ A clean, responsive GitHub profile search app that lets you look up any develope
 
 ## 📸 Screenshot
 
-
+![image alt](https://github.com/Harshit-700/Week-3-mission3/blob/4dbcc3d766bca29c6065f8c7a1b96e0e95dd4cfd/Screenshot%20(417).png).
 
 ---
 
