@@ -1,5 +1,5 @@
 const input = document.querySelector("input");
-const profileCard = document.getElementById("profile_card");
+const profileCard= document.getElementById("profile_card");
 const repoList = document.getElementById("repo_list");
 
 input.addEventListener("keypress", function (e) {
@@ -7,7 +7,6 @@ input.addEventListener("keypress", function (e) {
         getUser();
     }
 });
-
 async function getUser() {
     const username = input.value.trim();
     profileCard.innerHTML = "";
@@ -19,21 +18,21 @@ async function getUser() {
     }
     profileCard.innerHTML = `<div class="loader"></div>`;
 
-    try {
+    try{
         const userResponse = await fetch(`https://api.github.com/users/${username}`);
 
-        if (userResponse.status === 404) {
+        if(userResponse.status === 404) {
             throw new Error("404 - User not found");
         }
-
         const userData = await userResponse.json();
+        
         const repoResponse = await fetch(userData.repos_url);
         const repoData = await repoResponse.json();
 
         profileCard.innerHTML = `
             <img src="${userData.avatar_url}" width="100" class="profile-img">
             <h2>${userData.name || "No Name"}</h2>
-            <p>${userData.bio || "No Bio Available"}</p>
+         <p>${userData.bio || "No Bio Available"}</p>
             <p>📅 ${new Date(userData.created_at).toDateString()}</p>
 
             <a href="${userData.html_url}" target="_blank">
@@ -47,8 +46,8 @@ async function getUser() {
         }
 
         repoData.slice(0, 5).forEach(repo => {
-            const div = document.createElement("div");
-            div.classList.add("repo-item");
+         const div = document.createElement("div");
+        div.classList.add("repo-item");
 
             div.innerHTML = `
                 <div>
@@ -62,10 +61,10 @@ async function getUser() {
                     <button class="repo-btn">View</button>
                 </a>
             `;
-            repoList.appendChild(div);
+        repoList.appendChild(div);
         });
 
     } catch (error) {
-        profileCard.innerHTML = `<p class="error">${error.message}</p>`;
+    profileCard.innerHTML = `<p class="error">${error.message}</p>`;
     }
 }
