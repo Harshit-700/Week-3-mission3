@@ -4,8 +4,7 @@
     box-sizing: border-box;
 }
 
-h1 {
-
+h1{
     margin: 20px 0;
     text-align: center;
 
@@ -51,7 +50,7 @@ input {
     min-width: 60vh;
 }
 
-#profile_card {
+#profile_card{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,14 +90,13 @@ input {
     }
 }
 
-@media (max-width: 900px) {
+@media(max-width: 900px) {
 
     #profile_card,
     #repo_list {
         width: 70%;
     }
 }
-
 #repo_list {
     display: flex;
     flex-direction: column;
@@ -108,7 +106,6 @@ input {
 #repo_list div:hover {
     background-color: rgba(255, 255, 255, 0.05);
 }
-
 .loader {
     border: 5px solid #f3f3f3;
     border-top: 5px solid #2ea043;
@@ -118,7 +115,6 @@ input {
     animation: spin 1s linear infinite;
     margin: 20px auto;
 }
-
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -128,23 +124,6 @@ input {
         transform: rotate(360deg);
     }
 }
-
-.loader {
-    border: 4px solid #f3f3f3;
-    border-top: 4px solid #2ea043;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    animation: spin 1s linear infinite;
-    margin: 20px auto;
-}
-
-@keyframes spin {
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 .profile-img {
     border-radius: 50%;
 }
@@ -158,8 +137,6 @@ input {
     color: white;
     cursor: pointer;
 }
-
-
 .repo-item {
     display: flex;
     justify-content: space-between;
@@ -185,7 +162,6 @@ input {
 .repo-item a:active {
     color: #062c67;
 }
-
 .repo-btn {
     padding: 6px 10px;
     border: none;
@@ -194,7 +170,6 @@ input {
     color: white;
     cursor: pointer;
 }
-
 .error {
     color: red;
 }
