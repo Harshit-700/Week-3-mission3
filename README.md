@@ -23,7 +23,7 @@ dev-detective/
 
 ---
 
-## ✨ Features
+##  Features
 
 - **GitHub User Search** — Type any GitHub username and hit Enter or click Search
 - **Profile Card** — Displays avatar, name, bio, and account creation date
@@ -37,7 +37,7 @@ dev-detective/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the repository
 
@@ -57,7 +57,7 @@ npx serve .
 
 ---
 
-## 🧩 Sections
+##  Sections
 
 | Section | Description |
 |---------|-------------|
@@ -85,7 +85,7 @@ npx serve .
 
 ---
 
-## 📱 Responsive Breakpoints
+## Responsive Breakpoints
 
 | Breakpoint | Layout |
 |------------|--------|
@@ -95,7 +95,7 @@ npx serve .
 
 ---
 
-## ⚙️ API Used
+## API Used
 
 **GitHub REST API** — No authentication required for public data.
 
@@ -106,7 +106,7 @@ npx serve .
 
 ---
 
-## 🔒 Error Handling
+## Error Handling
 
 | Scenario | Behavior |
 |----------|----------|
@@ -117,7 +117,7 @@ npx serve .
 
 ---
 
-## 🧠 Core JavaScript Concepts Used
+##  Core JavaScript Concepts Used
 
 | Concept | Usage |
 |---------|-------|
@@ -130,7 +130,7 @@ npx serve .
 
 ---
 
-## 🛠️ Built With
+##  Built With
 
 - **HTML5** — Semantic structure and layout
 - **CSS3** — Flexbox, media queries, keyframe animations (spinner), transitions
@@ -140,7 +140,7 @@ npx serve .
 
 ---
 
-## 💡 Future Improvements
+##  Future Improvements
 
 - Show follower / following / star counts on profile card
 - Sort repos by stars or last updated
