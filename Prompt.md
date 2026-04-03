@@ -19,7 +19,6 @@ Extract and render the following details dynamically on the UI:
 - Full Name
 - Bio
 - Join Date (formatted)
-- Portfolio / Blog URL
 
 Ensure clean DOM manipulation and responsive UI updates.
 
@@ -27,8 +26,8 @@ Ensure clean DOM manipulation and responsive UI updates.
 
 ## Prompt 4: Implement Loader (Loading State)
 While the API request is in progress:
-- Display a loader (spinner or "Loading..." text)
-- Hide the loader once data is successfully fetched or an error occurs
+- Display a loader (spinner or "Loading... " text).
+- Hide the loader once data is successfully fetched or error occurs .
 
 This improves user experience during asynchronous operations.
 
@@ -50,13 +49,12 @@ Using the `repos_url` from the user data:
 
 Each repository should include:
 - Name (clickable link opening in a new tab)
-- Basic metadata (optional)
 
 ---
 
 ##  Prompt 7: Format API Data for Readability
 Convert raw API data into user-friendly formats:
-- Format dates (e.g., `2023-01-25T12:00:00Z` → `25 Jan 2023`)
+- Format dates (e.g., `2023-01-25T12:00:00Z` →  `25 Jan 2023`)
 - Handle missing fields (bio, portfolio, etc.) with fallback text
 
 Ensure consistent and clean presentation.
